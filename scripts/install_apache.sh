@@ -1,8 +1,11 @@
+#!/bin/bash
 
-# Comprobamos si Apache ya esta instalado
-if dpkg -s apache2 >/dev/null 2>&1; then
+# Comprobamos si Apache ya está instalado
+if dpkg -s apache2; then
     echo "Apache ya está instalado."
     exit 0
+else
+    echo "Apache no está instalado. Se procederá a instalarlo."
 fi
 
 # Actualizamos la lista de paquetes
