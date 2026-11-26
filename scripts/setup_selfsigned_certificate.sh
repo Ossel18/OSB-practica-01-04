@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Detenemos el script si se produce algun error
-set -e
+set -ex
 
 # Comprobamos que se ejecuta como administrador
 if [ "$(id -u)" -ne 0 ]; then
